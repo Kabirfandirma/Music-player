@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+
+  <!-- Font style icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Player-container -->
+  <div class="player-container">
+    <div class="album-art">
+    <img src="https://cdn.aptoide.com/imgs/2/1/c/21c402a609331cfe306ee5197603c2fa_icon.png" alt="Music Player Icon">
+    </div>
+
+    <div class="song-info">
+      <h2>Blinding Lights</h2>
+      <p>The Weeknd</p>
+    </div>
+
+    <div class="now-playing"><i class="fa-solid fa-music"></i> Now Playing...</div>
+    
+    <div class="music-wave">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <!-- Progress-bar -->
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button title="Previous"><i class="fa-solid fa-backward-step"></i></button>
+      <button title="Play/Pause"><i class="fa-solid fa-play"></i></button>
+      <button title="Next"><i class="fa-solid fa-forward-step"></i></button>
+    </div>
+
+    <!-- Volume-control -->
+    <div class="volume-control">
+      <label for="volume"><i class="fa-solid fa-volume-high"></i> Volume</label><br>
+      <input type="range" id="volume" min="0" max="100" value="75">
+    </div>
+
+    <!-- Playlist -->
+    <div class="playlist">
+      <h3><i class="fa-solid fa-list-music"></i> Playlist</h3>
+      <ul>
+        <li class="active">Blinding Lights - The Weeknd</li>
+        <li>Save Your Tears - The Weeknd</li>
+        <li>Levitating - Dua Lipa</li>
+        <li>Shape of You - Ed Sheeran</li>
+        <li>Peaches - Justin Bieber</li>
+        <li>As It Was - Harry Styles</li>
+        <li>Calm Down - Rema</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
